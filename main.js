@@ -90,9 +90,11 @@ let score = 0;
       questionText.textContent = `クイズ終了！スコア: ${score}/${questionData.length}`;
       options.innerHTML = '';
       nextButton.style.display = 'none';
+      result.textContent = '';
     }
   });
 
   // 初期表示
   displayQuestion();
 });
+
